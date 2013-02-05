@@ -61,7 +61,7 @@
     <Compile Include="2 Good to know\RetrievingFromContainerDuringRegistration.cs" />
     <Compile Include="SampleCode\Dependency.cs" />
     <Compile Include="SampleCode\Service.cs" />
-    <Compile Include="3 Gotchas\ServiceOverideToDependsOn.cs" />
+    <Compile Include="3 Gotchas\ConvertingFromObsoleteServiceOverides.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

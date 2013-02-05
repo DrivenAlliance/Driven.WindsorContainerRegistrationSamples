@@ -1,4 +1,6 @@
-﻿namespace Driven.WindsorContainerRegistrationSamples.SampleCode
+﻿using System.Collections.Generic;
+
+namespace Driven.WindsorContainerRegistrationSamples.SampleCode
 {
     public interface IService
     {
@@ -45,5 +47,18 @@
         }
     }
 
-   
+    public interface IConcreteServiceE
+    {
+        List<IDependency> Dependencies { get; set; }
+    }
+
+    public class ConcreteServiceE : IConcreteServiceE
+    {
+        public List<IDependency> Dependencies { get; set; }
+        public ConcreteServiceE(List<IDependency> dependencies)
+        {
+            Dependencies = dependencies;
+        }
+    }
+
 }
